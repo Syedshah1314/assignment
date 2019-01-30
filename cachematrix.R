@@ -1,7 +1,9 @@
-## This function makes an inverse
-## functions do
+## This function creates an inverse of a matrix given as input
+## 
 
-## Write a short comment describing this function
+## The first function, creates a matrix which is a list to set& get matrix, set & get inverse
+
+
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
@@ -19,7 +21,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function calculates inverse of matrix created by the above function
+## This function also checks to see inverse is already calculated, if so it gets from cache 
+## otherwise does the inverse calculation and sets the value of inverse
 
 cacheSolve <- function(x, ...) {
   i <- x$getinv()
